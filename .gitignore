@@ -1,0 +1,12 @@
+.DS_Store
+
+*.idea/
+main.iml
+checkpoint/*
+
+project/target/*
+project/project/target/*
+target/*
+
+data/*
+
