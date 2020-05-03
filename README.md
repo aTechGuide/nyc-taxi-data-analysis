@@ -25,4 +25,7 @@
 - ~ 400 GB uncompressed CSV
 - ~ 35 GB snappy parquet
 
+# References
+This project is build as part of [rockthejvm.com Spark Essentials with Scala](https://rockthejvm.com/p/spark-essentials) course.
+
 
