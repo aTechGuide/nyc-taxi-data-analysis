@@ -3,7 +3,7 @@
 # Analysis
 - Which zones have the most pickup / drop offs overall
 - What are the peak hours for taxi
-- How are the trips distributed ? Why are people taking the cab?
+- How are the trips distributed by length ? Why are people taking the cab?
 - What are the peak hours for long / short trips?
 - What are the top 3 pick up an drop off zones for long / short trips ?
 - How are people paying for the rides, on long / short trips
