@@ -52,11 +52,9 @@ object RideSharingOpportunity {
       */
     // groupAttemptsDF.show
 
-
-    //
-
     import spark.implicits._
 
+    // Calculating Economic Impact
     val percentGroupAttempt = 0.05
     val percentAcceptGrouping = 0.3
     val discount = 5
