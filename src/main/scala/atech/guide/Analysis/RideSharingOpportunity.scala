@@ -3,7 +3,7 @@ package atech.guide.Analysis
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
 
-object RideSharingOppertunity {
+object RideSharingOpportunity {
 
   def apply(taxiDF: DataFrame, taxiZoneDF: DataFrame)(implicit spark: SparkSession): Unit = {
 
