@@ -1,11 +1,10 @@
 package atech.guide
 
-import atech.guide.Analysis.{MostPickupDropoffs, PaymentTypeEvolvingWithTime, PeakHoursForLongShortTrips, PeakHoursForTaxi, PeoplePayingForLongShortTrips, TopPickUpAndDropOffForLongShortTrips, TripDistribution}
 import org.apache.spark.sql.SparkSession
 
 object TaxiApplication extends App {
 
-  private val spark = SparkSession
+  implicit val spark: SparkSession = SparkSession
     .builder()
     .appName(getClass.getSimpleName)
     .master("local[2]")
@@ -40,6 +39,40 @@ object TaxiApplication extends App {
   // taxiDF.printSchema
   // println(taxiDF.count) // 331893
 
+  val bigTaxiDF = spark.read
+    .load("data/NYC_taxi_2009-2016.parquet")
+
+  println(bigTaxiDF.count) // 1382375998
+
+  /**
+    * root
+    * |-- dropoff_datetime: timestamp (nullable = true)
+    * |-- dropoff_latitude: float (nullable = true)
+    * |-- dropoff_longitude: float (nullable = true)
+    * |-- dropoff_taxizone_id: integer (nullable = true)
+    * |-- ehail_fee: float (nullable = true)
+    * |-- extra: float (nullable = true)
+    * |-- fare_amount: float (nullable = true)
+    * |-- improvement_surcharge: float (nullable = true)
+    * |-- mta_tax: float (nullable = true)
+    * |-- passenger_count: integer (nullable = true)
+    * |-- payment_type: string (nullable = true)
+    * |-- pickup_datetime: timestamp (nullable = true)
+    * |-- pickup_latitude: float (nullable = true)
+    * |-- pickup_longitude: float (nullable = true)
+    * |-- pickup_taxizone_id: integer (nullable = true)
+    * |-- rate_code_id: integer (nullable = true)
+    * |-- store_and_fwd_flag: string (nullable = true)
+    * |-- tip_amount: float (nullable = true)
+    * |-- tolls_amount: float (nullable = true)
+    * |-- total_amount: float (nullable = true)
+    * |-- trip_distance: float (nullable = true)
+    * |-- trip_type: string (nullable = true)
+    * |-- vendor_id: string (nullable = true)
+    * |-- trip_id: long (nullable = true)
+    */
+  bigTaxiDF.printSchema
+
   val taxiZoneDF = spark.read
     .option("inferSchema", "true")
     .option("header", "true")
@@ -73,7 +106,10 @@ object TaxiApplication extends App {
   // PeoplePayingForLongShortTrips(taxiDF, taxiZoneDF)
 
   // 7
-  PaymentTypeEvolvingWithTime(taxiDF, taxiZoneDF)
+  // PaymentTypeEvolvingWithTime(taxiDF, taxiZoneDF)
+
+  // 8
+  // RideSharingOppertunity(taxiDF, taxiZoneDF)
 
 
 }

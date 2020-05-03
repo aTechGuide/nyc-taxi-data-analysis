@@ -9,4 +9,5 @@ project/project/target/*
 target/*
 
 data/*
+output/*
 
