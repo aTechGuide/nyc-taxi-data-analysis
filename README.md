@@ -1,14 +1,14 @@
 # NYC taxi Data Analysis
 
 # Analysis
-- Which zones have the most pickup / drop offs overall
-- What are the peak hours for taxi
-- How are the trips distributed by length ? Why are people taking the cab?
-- What are the peak hours for long / short trips?
-- What are the top 3 pick up an drop off zones for long / short trips ?
-- How are people paying for the rides, on long / short trips
-- How is the payment type evolving with time?
-- Can we explore a ride - sharing opportunity by grouping close short trips?
+- Which zones have the most pickup / drop offs overall [MostPickupDropoffs.scala]
+- What are the peak hours for taxi [PeakHoursForTaxi.scala]
+- How are the trips distributed by length ? Why are people taking the cab? [TripDistribution.scala]
+- What are the peak hours for long / short trips? [PeakHoursForLongShortTrips.scala]
+- What are the top 3 pick up an drop off zones for long / short trips ? [TopPickUpAndDropOffForLongShortTrips.scala]
+- How are people paying for the rides, on long / short trips [PeoplePayingForLongShortTrips.scala]
+- How is the payment type evolving with time? [PaymentTypeEvolvingWithTime.scala]
+- Can we explore a ride - sharing opportunity by grouping close short trips? [RideSharingOppertunity.scala]
 
 
 # Data Sources
