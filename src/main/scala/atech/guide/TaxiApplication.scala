@@ -55,7 +55,10 @@ object TaxiApplication extends App {
    // taxiZoneDF.printSchema()
 
   // 1
-  MostPickupDropoffs(taxiDF, taxiZoneDF)
+  // MostPickupDropoffs(taxiDF, taxiZoneDF)
+
+  // 2
+  PeakHoursForTaxi(taxiDF, taxiZoneDF)
 
 
 }
