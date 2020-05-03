@@ -26,6 +26,8 @@ object TopPickUpAndDropOffForLongShortTrips {
 
 
     /**
+      * Single Day Analysis
+      *
       * +----------+--------------------+--------------------+
       * |TotalTrips|         Pickup_zone|        Dropoff_zone|
       * +----------+--------------------+--------------------+
@@ -44,6 +46,7 @@ object TopPickUpAndDropOffForLongShortTrips {
 
 
     /**
+      * Single Day Analysis
       *
       * +----------+--------------------+--------------------+
       * |TotalTrips|         Pickup_zone|        Dropoff_zone|

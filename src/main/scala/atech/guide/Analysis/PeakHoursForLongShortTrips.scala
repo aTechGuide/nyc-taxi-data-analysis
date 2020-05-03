@@ -18,6 +18,8 @@ object PeakHoursForLongShortTrips {
       .orderBy(col("TotalTrips").desc_nulls_last)
 
     /**
+      * Single Day Analysis
+      *
       * +-----------+------+----------+
       * |hour_of_day|isLong|TotalTrips|
       * +-----------+------+----------+

@@ -20,6 +20,8 @@ object TripDistribution {
     )
 
     /**
+      * Single Day Analysis
+      *
       * +------+---------+-----------------+-----------------+---+----+
       * | count|threshold|             mean|           stddev|min| max|
       * +------+---------+-----------------+-----------------+---+----+
@@ -34,6 +36,8 @@ object TripDistribution {
     val tripsByLengthDF = tripsWithLengthDF.groupBy("isLong").count
 
     /**
+      * Single Day Analysis
+      *
       * +------+------+
       * |isLong| count|
       * +------+------+

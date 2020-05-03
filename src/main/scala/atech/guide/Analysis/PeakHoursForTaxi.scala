@@ -15,6 +15,8 @@ object PeakHoursForTaxi {
 
 
     /**
+      * Single Day Analysis
+      *
       * +-----------+----------+
       * |hour_of_day|TotalTrips|
       * +-----------+----------+
