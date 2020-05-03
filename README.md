@@ -7,7 +7,7 @@
 - What are the peak hours for long / short trips?
 - What are the top 3 pick up an drop off zones for long / short trips ?
 - How are people paying for the rides, on long / short trips
-- How is the payment tupe evolving with time?
+- How is the payment type evolving with time?
 - Can we explore a ride - sharing opportunity by grouping close short trips?
 
 
