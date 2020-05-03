@@ -1,6 +1,6 @@
 package atech.guide
 
-import atech.guide.Analysis.{MostPickupDropoffs, PeakHoursForTaxi, TripDistribution}
+import atech.guide.Analysis.{MostPickupDropoffs, PeakHoursForLongShortTrips, PeakHoursForTaxi, TripDistribution}
 import org.apache.spark.sql.SparkSession
 
 object TaxiApplication extends App {
@@ -61,7 +61,10 @@ object TaxiApplication extends App {
   // PeakHoursForTaxi(taxiDF, taxiZoneDF)
 
   // 3
-  TripDistribution(taxiDF, taxiZoneDF)
+  // TripDistribution(taxiDF, taxiZoneDF)
+
+  // 4
+  PeakHoursForLongShortTrips(taxiDF, taxiZoneDF)
 
 
 }
